@@ -17,3 +17,11 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 # '\W' adds the name of the current directory
 export PS1="$red\u$green\$(__git_ps1)$blue \W
 $ $reset"
+
+#alias
+alias ll='ls -la'
+alias cl='curl -L'
+alias ..='cd ..'
+alias ...='cd ...'
+alias now='date +"%T"'
+alias sl='ls'

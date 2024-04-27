@@ -26,12 +26,46 @@ sudo apt update
 sudo apt install build-essential
 ```
 ## Winget
-## Git
-```
+## Git Setup
+### 1. Installing Git
+you can download it and install it from [here](https://git-scm.com/downloads) or execute the following command
+```powershell
 winget install -e --id Git.Git
-git config --global user.name "Ahmed Fouad LAGHA"
-git config --global user.email "laghaahmedfouad@gmail.com"
 ```
+### 2. First Time Git Configuration
+**sets up Git with your name**
+   ```sh
+   $ git config --global user.name "<Your-Full-Name>"
+   ```
+**sets up Git with your email**
+   ```sh
+   $ git config --global user.email "<your-email-address>"
+   ```
+**makes sure that Git output is colored**
+   ```sh
+   $ git config --global color.ui auto
+   ```
+**displays the original state in a conflict**
+   ```sh
+   $ git config --global merge.conflictstyle diff3
+   ```
+**show configuration**
+   ```sh
+   $ git config --list
+   ```
+### 3. Git & Code Editor
+**Atom Editor Setup**
+   ```sh
+   $ git config --global core.editor "atom --wait"
+   ```    
+**Sublime Text Setup**
+   ```sh
+   $ git config --global core.editor "'C:/Program Files/Sublime Text 2/sublime_text.exe' -n -w"
+   ```     
+**VSCode Setup**
+   ```sh
+   $ git config --global core.editor "code --wait"
+   ```
 ## VS Code
 ```
 winget install -e --id Microsoft.VisualStudioCode
@@ -131,3 +165,19 @@ vi .emacs
 (global-whitespace-mode t)
 (setq column-number-mode t)
 ```
+## Configuring Terminal
+1. Clone the repository to your local machine:
+   ```sh
+   $ git clone https://github.com/ahmedfouadlagha/Setting-up-for-Software-Development.git ~/
+   ```
+2. move the directory terminal-config to your home directory and name it .terminal-config (there's a dot at the front, now!)
+   ```sh
+   $ cd
+   $ start .
+   $ mv terminal-config .terminal-config
+   ```
+3. move the bash_profile file to your home directory and name it .bash_profile (there's a dot at the front, now!)
+    > if you already have a .bash_profile file in your home directory, transfer the content from the downloaded bash_profile to your existing .bash_profile
+   ```sh
+   $ mv bash_profile .bash_profile
+   ```

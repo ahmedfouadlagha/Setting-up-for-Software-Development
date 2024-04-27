@@ -55,8 +55,9 @@ nvm install 18
 node --version
 ```
 ## Python with Conda 
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-
+```
+$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+```
 ### Betty
 - Clone the repo to your local machine
 ```

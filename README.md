@@ -177,8 +177,8 @@ vi .emacs
    $ mv .terminal-config ~/
    ```
 3. move the `.bash_profile` file to your home directory.
-    > [!NOTE]
-    > if you already have a .bash_profile file in your home directory, transfer the content from the downloaded bash_profile to your existing .bash_profile
+> [!NOTE]
+> if you already have a `.bash_profile` file in your home directory, transfer the content from the downloaded bash_profile to your existing `.bash_profile`
    ```sh
    $ mv .bash_profile ~/
    ```

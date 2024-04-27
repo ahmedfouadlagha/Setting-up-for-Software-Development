@@ -7,10 +7,9 @@ powercfg -duplicatescheme 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 ## Preparing the command line
 ## Installing Windows Subsystem for Linux (WSL)
 ### 1. Setting up WSL and virtualization
-- activate Windows Subsystem for Linux
-   - Windows key + R
-   - optionalfeatures.exe and hit enter
-   - search for `Windows Subsystem for Linux` and activate it > ok
+- Windows key + R
+- optionalfeatures.exe and hit enter
+- search for `Windows Subsystem for Linux` and activate it > ok
 ### 2. Ubuntu install
 ```
 wsl --install

@@ -1,10 +1,31 @@
 # Setting up for Software Development
 ## System preparation and cleanup
-## Optimizing Performance
+1. Windows Update
+```powershell
+Enable-MicrosoftUpdate
+Install-WindowsUpdate -acceptEula
+```
+2. Go to Task manager > startup apps > Disable all applications
+3. windows key > parameters > Apps > Startup > Disable all applications
+4. windows key > power options > set to balance >> change plan settings
+5. Optimizing Performance
 ```
 powercfg -duplicatescheme 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 ```
+or 
+```
+powercfg /s SCHEME_MIN
+```
+6. go back to power options, now high Performance is enabled
+7. windows key > parameters > Apps > installed apps > uninstall unnecessary apps
+8. windows key > visual effects > off every things
+9. personalization > colors > transparency effects > off
+10. windows key > view advanced system settings > Performance options (settings) > adjust for best performance
+11. windows key > notifications
 ## Preparing the command line
+```
+Set-ExecutionPolicy Unrestricted
+```
 ## Installing Windows Subsystem for Linux (WSL)
 ### 1. Setting up WSL and virtualization
 - Windows key + R
@@ -71,12 +92,19 @@ winget install -e --id Git.Git
 winget install -e --id Microsoft.VisualStudioCode
 ```
 ## Visual Studio Community Edition 
-- click [here](https://www.microsoft.com/en-us/download/details.aspx?id=104781)
-- `Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;`
+- download from [here](https://www.microsoft.com/en-us/download/details.aspx?id=104781)
+- select "ASP.NET" + AZURE + .NET Multi + .NET desktop
 ## SQL Server Express
+- download from [here](https://www.microsoft.com/fr-fr/download/details.aspx?id=104781)
+- basic is fine
 ## SSMS
+- install ssms
+
 ## Docker
+- download from [here](https://www.docker.com/products/docker-desktop/)
+- after installation : settings > resources > wsl intergration > ubuntu enable > apply
 ## VS Code extensions and Settings Sync
+
 ## Node Version Manager (NVM) and NodeJS
 1. install curl
 ```

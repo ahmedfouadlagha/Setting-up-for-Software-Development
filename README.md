@@ -47,6 +47,7 @@ sudo apt update
 sudo apt install build-essential
 ```
 ## Winget
+visit the website : [here](https://winget.run/)
 ## Git Setup
 ### 1. Installing Git
 you can download it and install it from [here](https://git-scm.com/downloads) or execute the following command

@@ -43,7 +43,7 @@ ubuntu config --default-user root
 ```
 2. open ubuntu terminal
 ```
-sudo apt update
+sudo apt update && sudo apt upgrade
 sudo apt install build-essential
 ```
 ## Winget

@@ -118,9 +118,18 @@ nvm install 18
 node --version
 ```
 ## Python with Conda 
+1. download the Miniconda installer:
 ```
 $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 ```
+2. Make the installer executable:
+``
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+``
+3. Run the installer:
+``
+./Miniconda3-latest-Linux-x86_64.sh
+``
 ### Betty
 - Clone the repo to your local machine
 ```
